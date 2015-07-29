@@ -5,6 +5,68 @@
             "patternId": "camel_case_classes",
             "level": "Err",
             "category": "CodeStyle"
+        }, {
+            "patternId": "cyclomatic_complexity",
+            "level": "Err",
+            "category": "ErrorProne"
+        }, {
+            "patternId": "duplicate_key",
+            "level": "Warn",
+            "category": "ErrorProne"
+        }, {
+            "patternId": "ensure_comprehensions",
+            "level": "Warn",
+            "category": "ErrorProne"
+        }, {
+            "patternId": "eol_last",
+            "level": "Info",
+            "category": "CodeStyle"
+        }, {
+            "patternId": "indentation",
+            "level": "Err",
+            "category": "CodeStyle",
+            "parameters": [
+                {
+                    "name": "value",
+                    "default": 4
+                }
+            ]
+        }, {
+            "patternId": "no_backticks",
+            "level": "Err",
+            "category": "ErrorProne"
+        }, {
+            "patternId": "no_interpolation_in_single_quotes",
+            "level": "Warn",
+            "category": "CodeStyle"
+        }, {
+            "patternId": "no_stand_alone_at",
+            "level": "Warn",
+            "category": "ErrorProne"
+        }, {
+            "patternId": "no_tabs",
+            "level": "Err",
+            "category": "CodeStyle"
+        }, {
+            "patternId": "no_throwing_strings",
+            "level": "Err",
+            "category": "ErrorProne"
+        }, {
+            "patternId": "no_trailing_semicolons",
+            "level": "Warn",
+            "category": "CodeStyle"
+        }, {
+            "patternId": "no_trailing_whitespace",
+            "level": "Warn",
+            "category": "CodeStyle"
+        }, {
+            "patternId": "no_unnecessary_fat_arrows",
+            "level": "Err",
+            "category": "ErrorProne"
+        }, {
+            "patternId": "prefer_english_operator",
+            "level": "Warn",
+            "category": "CodeStyle"
         }
     ]
 }

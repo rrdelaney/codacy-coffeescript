@@ -1,7 +1,7 @@
 fs = require 'fs'
 path = require 'path'
 {lint} = require 'coffeelint'
-config = require('./default').coffeelint
+config = require './default'
 
 lintFile = (file, config) ->
     errors = lint (fs.readFileSync file).toString(), config
