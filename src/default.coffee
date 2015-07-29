@@ -1,4 +1,4 @@
-module.exports =
+defaults =
     arrow_spacing:
         level: 'warn'
     cyclomatic_complexity:
@@ -16,3 +16,5 @@ module.exports =
         level: 'warn'
     prefer_english_operator:
         level: 'warn'
+
+module.exports = defaults

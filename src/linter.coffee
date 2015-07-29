@@ -2,6 +2,7 @@ fs = require 'fs'
 path = require 'path'
 {lint} = require 'coffeelint'
 config = require './default'
+transform = require './transform'
 
 lintFile = (file, config) ->
     errors = lint (fs.readFileSync file).toString(), config
@@ -20,5 +21,3 @@ lintDir = (dir, config) ->
             errors = errors.concat lintFile file, config
 
     errors
-
-console.log lintDir 'src', config
