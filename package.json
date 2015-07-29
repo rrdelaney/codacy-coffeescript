@@ -1,0 +1,8 @@
+{
+  "name": "codacy-coffeescript",
+  "version": "0.0.0",
+  "description": "A codacy tool for coffeescript",
+  "main": "index.js",
+  "author": "Ryan Delaney",
+  "license": "MIT"
+}
