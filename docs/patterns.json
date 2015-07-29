@@ -1,0 +1,10 @@
+{
+    "name": "coffeelint",
+    "patterns": [
+        {
+            "patternId": "camel_case_classes",
+            "level": "Err",
+            "category": "CodeStyle"
+        }
+    ]
+}
