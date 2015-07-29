@@ -1,6 +1,5 @@
 linter = require './linter'
 transform = require './transform'
-
 lintConfig = require './default'
 
 try
@@ -16,3 +15,4 @@ else
     errors = linter.lintDir '/src'
 
 errors = (transform err for err in errors)
+console.log errors

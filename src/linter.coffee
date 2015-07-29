@@ -21,3 +21,6 @@ lintDir = (dir, config) ->
             errors = errors.concat lintFile file, config
 
     errors
+
+exports.lintFile = lintFile
+exports.lintDir = lintDir
