@@ -3,19 +3,19 @@
     "patterns": [
         {
             "patternId": "camel_case_classes",
-            "level": "Err",
+            "level": "Error",
             "category": "CodeStyle"
         }, {
             "patternId": "cyclomatic_complexity",
-            "level": "Err",
+            "level": "Error",
             "category": "ErrorProne"
         }, {
             "patternId": "duplicate_key",
-            "level": "Warn",
+            "level": "Warning",
             "category": "ErrorProne"
         }, {
             "patternId": "ensure_comprehensions",
-            "level": "Warn",
+            "level": "Warning",
             "category": "ErrorProne"
         }, {
             "patternId": "eol_last",
@@ -23,7 +23,7 @@
             "category": "CodeStyle"
         }, {
             "patternId": "indentation",
-            "level": "Err",
+            "level": "Error",
             "category": "CodeStyle",
             "parameters": [
                 {
@@ -33,39 +33,39 @@
             ]
         }, {
             "patternId": "no_backticks",
-            "level": "Err",
+            "level": "Error",
             "category": "ErrorProne"
         }, {
             "patternId": "no_interpolation_in_single_quotes",
-            "level": "Warn",
+            "level": "Warning",
             "category": "CodeStyle"
         }, {
             "patternId": "no_stand_alone_at",
-            "level": "Warn",
+            "level": "Warning",
             "category": "ErrorProne"
         }, {
             "patternId": "no_tabs",
-            "level": "Err",
+            "level": "Error",
             "category": "CodeStyle"
         }, {
             "patternId": "no_throwing_strings",
-            "level": "Err",
+            "level": "Error",
             "category": "ErrorProne"
         }, {
             "patternId": "no_trailing_semicolons",
-            "level": "Warn",
+            "level": "Warning",
             "category": "CodeStyle"
         }, {
             "patternId": "no_trailing_whitespace",
-            "level": "Warn",
+            "level": "Warning",
             "category": "CodeStyle"
         }, {
             "patternId": "no_unnecessary_fat_arrows",
-            "level": "Err",
+            "level": "Error",
             "category": "ErrorProne"
         }, {
             "patternId": "prefer_english_operator",
-            "level": "Warn",
+            "level": "Warning",
             "category": "CodeStyle"
         }
     ]
