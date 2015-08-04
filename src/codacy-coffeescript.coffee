@@ -15,4 +15,4 @@ else
     errors = linter.lintDir '/src'
 
 errors = (transform err for err in errors)
-console.log errors
+console.log JSON.stringify errors, null, 4

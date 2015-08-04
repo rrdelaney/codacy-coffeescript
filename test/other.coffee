@@ -1,2 +1,4 @@
-wow fn ->
-      @me
+fn ->
+    @me
+
+`var x = 0;`
