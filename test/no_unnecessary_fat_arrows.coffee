@@ -1,4 +1,6 @@
 ##Patterns: no_unnecessary_fat_arrows
+
 ##Err: no_unnecessary_fat_arrows
-fn =>
-    what are those
+fn1 = => 5
+
+fn2 = => @prop

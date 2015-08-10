@@ -3,8 +3,6 @@ defaults =
         level: 'warn'
     cyclomatic_complexity:
         level: 'error'
-    eol_last:
-        level: 'warn'
     indentation:
         level: 'error'
         value: 4
