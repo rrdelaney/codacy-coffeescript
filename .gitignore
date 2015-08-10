@@ -1,4 +1,5 @@
 target/
 codacy-plugins-test/
 node_modules/
+docs/
 *.log

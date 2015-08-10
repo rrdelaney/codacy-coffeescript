@@ -1,68 +1,103 @@
 {
-    "name": "coffeelint",
-    "patterns": [
-        {
-            "patternId": "camel_case_classes",
-            "level": "Error",
-            "category": "CodeStyle"
-        }, {
-            "patternId": "cyclomatic_complexity",
-            "level": "Error",
-            "category": "ErrorProne"
-        }, {
-            "patternId": "duplicate_key",
-            "level": "Warning",
-            "category": "ErrorProne"
-        }, {
-            "patternId": "ensure_comprehensions",
-            "level": "Warning",
-            "category": "ErrorProne"
-        }, {
-            "patternId": "no_tabs",
-            "level": "Error",
-            "category": "CodeStyle"
-        }, {
-            "patternId": "indentation",
-            "level": "Error",
-            "category": "CodeStyle",
-            "parameters": [
-                {
-                    "name": "value",
-                    "default": 4
-                }
-            ]
-        }, {
-            "patternId": "no_backticks",
-            "level": "Error",
-            "category": "ErrorProne"
-        }, {
-            "patternId": "no_interpolation_in_single_quotes",
-            "level": "Warning",
-            "category": "CodeStyle"
-        }, {
-            "patternId": "no_stand_alone_at",
-            "level": "Warning",
-            "category": "ErrorProne"
-        }, {
-            "patternId": "no_throwing_strings",
-            "level": "Error",
-            "category": "ErrorProne"
-        }, {
-            "patternId": "no_trailing_semicolons",
-            "level": "Warning",
-            "category": "CodeStyle"
-        }, {
-            "patternId": "no_trailing_whitespace",
-            "level": "Warning",
-            "category": "CodeStyle"
-        }, {
-            "patternId": "no_unnecessary_fat_arrows",
-            "level": "Error",
-            "category": "ErrorProne"
-        }, {
-            "patternId": "prefer_english_operator",
-            "level": "Warning",
-            "category": "CodeStyle"
-        }
-    ]
+  "name": "coffeelint",
+  "patterns": [
+    {
+      "patternId": "camel_case_classes",
+      "category": "CodeStyle",
+      "title": "Camel Case Classes",
+      "description": "Class name should be UpperCamelCased",
+      "level": "Error"
+    },
+    {
+      "patternId": "cyclomatic_complexity",
+      "category": "ErrorProne",
+      "title": "Cyclomatic Complexity",
+      "description": "The cyclomatic complexity is too damn high",
+      "level": "Error"
+    },
+    {
+      "patternId": "duplicate_key",
+      "category": "ErrorProne",
+      "title": "Duplicate Key",
+      "description": "Duplicate key defined in object or class",
+      "level": "Warning"
+    },
+    {
+      "patternId": "ensure_comprehensions",
+      "category": "ErrorProne",
+      "title": "Ensure Comprehensions",
+      "description": "Comprehensions must have parentheses around them",
+      "level": "Warning"
+    },
+    {
+      "patternId": "no_tabs",
+      "category": "CodeStyle",
+      "title": "No Tabs",
+      "description": "Line contains tab indentation",
+      "level": "Error"
+    },
+    {
+      "patternId": "indentation",
+      "category": "CodeStyle",
+      "title": "Indentation",
+      "description": "Line contains inconsistent indentation",
+      "level": "Error"
+    },
+    {
+      "patternId": "no_backticks",
+      "category": "ErrorProne",
+      "title": "No Backticks",
+      "description": "Backticks are forbidden",
+      "level": "Error"
+    },
+    {
+      "patternId": "no_interpolation_in_single_quotes",
+      "category": "CodeStyle",
+      "title": "No Interpolation In Single Quotes",
+      "description": "Interpolation in single quoted strings is forbidden",
+      "level": "Warning"
+    },
+    {
+      "patternId": "no_stand_alone_at",
+      "category": "ErrorProne",
+      "title": "No Stand Alone At",
+      "description": "@ must not be used stand alone",
+      "level": "Warning"
+    },
+    {
+      "patternId": "no_throwing_strings",
+      "category": "ErrorProne",
+      "title": "No Throwing Strings",
+      "description": "Throwing strings is forbidden",
+      "level": "Error"
+    },
+    {
+      "patternId": "no_trailing_semicolons",
+      "category": "CodeStyle",
+      "title": "No Trailing Semicolons",
+      "description": "Line contains a trailing semicolon",
+      "level": "Warning"
+    },
+    {
+      "patternId": "no_trailing_whitespace",
+      "category": "CodeStyle",
+      "title": "No Trailing Whitespace",
+      "description": "Line ends with trailing whitespace",
+      "level": "Warning"
+    },
+    {
+      "patternId": "no_unnecessary_fat_arrows",
+      "category": "ErrorProne",
+      "title": "No Unnecessary Fat Arrows",
+      "description": "Unnecessary fat arrow",
+      "level": "Error"
+    },
+    {
+      "patternId": "prefer_english_operator",
+      "category": "CodeStyle",
+      "title": "Prefer English Operator",
+      "description": "Don't use &&, ||, ==, !=, or !",
+      "level": "Warning"
+    }
+  ]
 }

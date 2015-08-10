@@ -1,0 +1,67 @@
+{
+    "name": "coffeelint",
+    "patterns": {
+        "camel_case_classes": {
+            "level": "Error",
+            "category": "CodeStyle"
+        },
+        "cyclomatic_complexity": {
+            "level": "Error",
+            "category": "ErrorProne"
+        },
+        "duplicate_key": {
+            "level": "Warning",
+            "category": "ErrorProne"
+        },
+        "ensure_comprehensions": {
+            "level": "Warning",
+            "category": "ErrorProne"
+        },
+        "no_tabs": {
+            "level": "Error",
+            "category": "CodeStyle"
+        },
+        "indentation": {
+            "level": "Error",
+            "category": "CodeStyle",
+            "parameters": [
+                {
+                    "name": "value",
+                    "default": 4
+                }
+            ]
+        },
+        "no_backticks": {
+            "level": "Error",
+            "category": "ErrorProne"
+        },
+        "no_interpolation_in_single_quotes": {
+            "level": "Warning",
+            "category": "CodeStyle"
+        },
+        "no_stand_alone_at": {
+            "level": "Warning",
+            "category": "ErrorProne"
+        },
+        "no_throwing_strings": {
+            "level": "Error",
+            "category": "ErrorProne"
+        },
+        "no_trailing_semicolons": {
+            "level": "Warning",
+            "category": "CodeStyle"
+        },
+        "no_trailing_whitespace": {
+            "level": "Warning",
+            "category": "CodeStyle"
+        },
+        "no_unnecessary_fat_arrows": {
+            "level": "Error",
+            "category": "ErrorProne"
+        },
+        "prefer_english_operator": {
+            "level": "Warning",
+            "category": "CodeStyle"
+        }
+    }
+}
