@@ -1,0 +1,10 @@
+language: scala
+sudo: true
+
+before_script:
+    - curl -sLo - http://j.mp/install-travis-docker | sh -xe
+    - npm install -g grunt
+    - sh script/bootstrap
+
+script:
+    - sh script/test
