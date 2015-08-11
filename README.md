@@ -2,6 +2,8 @@
 
 Offers coffeescript support for Codacy
 
+Please run `sh script/bootstrap` to see the generated patterns
+
 # Developing
 
 ## Dependencies
