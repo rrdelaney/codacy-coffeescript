@@ -6,7 +6,7 @@ dependencies:
   override:
     - npm install
     - grunt
-    - docker build . -t $CIRCLE_PROJECT_REPONAME
+    - docker build -t $CIRCLE_PROJECT_REPONAME .
 
 test:
   pre:
