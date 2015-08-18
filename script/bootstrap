@@ -10,7 +10,7 @@ NC='\033[0m'
 
 printf "${CYAN}Installing dependencies${NC}\n"
 npm install && printf "${GREEN}Dependency installation sucessful!${NC}\n"
-printf "${CYAN}Installing test suite${NC}\n"
-git clone https://github.com/codacy/codacy-plugins-test.git && printf "${GREEN}Test suite installation successful!${NC}\n"
+#printf "${CYAN}Installing test suite${NC}\n"
+#git clone https://github.com/codacy/codacy-plugins-test.git && printf "${GREEN}Test suite installation successful!${NC}\n"
 printf "${CYAN}Building project${NC}\n"
 grunt
