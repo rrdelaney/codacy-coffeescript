@@ -9,6 +9,6 @@ RED='\033[1;31m'
 NC='\033[0m'
 
 printf "${CYAN}Building docker image${NC}\n"
-docker build -t cc . && printf "${GREEN}Build successful!${NC}\n"
+docker build -t codacy-coffeescript . && printf "${GREEN}Build successful!${NC}\n"
 printf "${CYAN}Running plugin tests${NC}\n"
-cd codacy-plugins-test && (sbt "run-main codacy.plugins.DockerTest all cc:latest" || cd ..)
+cd codacy-plugins-test && (sbt "run-main codacy.plugins.DockerTest all codacy-coffeescript:latest" || cd ..)
