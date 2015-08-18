@@ -1,3 +1,10 @@
+[![Build Status](https://circleci.com/gh/codacy/codacy-pylint.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/codacy/codacy-pylint)
+
+## Forked from https://github.com/rrdelaney/codacy-coffeescript
+
+A big thank you to Ryan Delaney for taking the time to implement this coffeescript solution. Show him your love @ https://github.com/rrdelaney.
+
+
 # codacy-coffeescript
 
 Offers coffeescript support for Codacy
