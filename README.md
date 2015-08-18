@@ -1,4 +1,4 @@
-[![Build Status](https://circleci.com/gh/codacy/codacy-pylint.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/codacy/codacy-pylint)
+[![Build Status](https://circleci.com/gh/codacy/codacy-coffeescript.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/codacy/codacy-coffeescript)
 
 ## Forked from https://github.com/rrdelaney/codacy-coffeescript
 
