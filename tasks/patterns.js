@@ -11,21 +11,33 @@ module.exports = function(grunt) {
             patterns: []
         };
 
+        var codacyPatternDescriptions = [];
+
         for (var rule in patterns.patterns) {
             var category = patterns.patterns[rule].category;
             var message = coffeelint.RULES[rule].message;
             var description = coffeelint.RULES[rule].description;
             var level = patterns.patterns[rule].level;
+            var parameters = patterns.patterns[rule].parameters;
 
             grunt.file.write('docs/description/'+rule+'.md', description);
             codacyPatterns.patterns.push({
                 patternId: rule,
                 category: category,
+                level: level,
+                parameters: parameters
+            });
+
+            codacyPatternDescriptions.push({
+                patternId: rule,
                 title: titleize(rule),
                 description: message,
-                level: level
+                parameters: parameters,
+                timeToFix: 5
             });
         }
+
+        grunt.file.write('docs/description/description.json', JSON.stringify(codacyPatternDescriptions, null, 2));
 
         grunt.file.write('docs/patterns.json', JSON.stringify(codacyPatterns, null, 2));
 

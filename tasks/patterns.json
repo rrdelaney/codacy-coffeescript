@@ -27,6 +27,7 @@
             "parameters": [
                 {
                     "name": "value",
+                    "description": "Indentation value",
                     "default": 4
                 }
             ]
