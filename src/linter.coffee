@@ -1,7 +1,6 @@
 fs = require 'fs'
 path = require 'path'
 {lint} = require 'coffeelint'
-config = require './default'
 transform = require './transform'
 
 lintFile = (file, config) ->
