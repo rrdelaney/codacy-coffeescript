@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/e3358fb3445a4337b9e20c5c09106925)](https://www.codacy.com/app/Codacy/codacy-coffeelint)
 [![Build Status](https://circleci.com/gh/codacy/codacy-coffeelint.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/codacy/codacy-coffeelint)
 
 ## Forked from https://github.com/rrdelaney/codacy-coffeescript
