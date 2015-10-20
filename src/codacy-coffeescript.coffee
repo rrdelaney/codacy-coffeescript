@@ -9,8 +9,9 @@ catch
 
 for tool in userConfig.tools when tool.name is 'coffeelint'
     for pattern in tool.patterns
-        for parameter in pattern.parameters when parameter.name is 'value'
-            lintConfig[pattern.patternId]["value"] = parameter.value
+        if pattern.parameters
+            for parameter in pattern.parameters when parameter.name is 'value'
+                lintConfig[pattern.patternId]["value"] = parameter.value
 
 if userConfig.files
     errors = []

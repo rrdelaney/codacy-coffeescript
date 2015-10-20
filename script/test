@@ -8,6 +8,8 @@ GREEN='\033[1;32m'
 RED='\033[1;31m'
 NC='\033[0m'
 
+printf "${CYAN}Building project${NC}\n"
+grunt
 printf "${CYAN}Building docker image${NC}\n"
 docker rmi codacy-coffeescript
 docker build -t codacy-coffeescript . && printf "${GREEN}Build successful!${NC}\n"
