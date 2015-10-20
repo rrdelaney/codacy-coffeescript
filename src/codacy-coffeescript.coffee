@@ -1,6 +1,8 @@
 linter = require './linter'
 transform = require './transform'
-lintConfig = require './default'
+defaultLintConfig = require './default'
+
+lintConfig = {}
 
 try
     userConfig = require '/src/.codacy'
@@ -9,6 +11,7 @@ catch
 
 for tool in userConfig.tools when tool.name is 'coffeelint'
     for pattern in tool.patterns
+        lintConfig[pattern.patternId] = defaultLintConfig[pattern.patternId]
         if pattern.parameters
             for parameter in pattern.parameters when parameter.name is 'value'
                 lintConfig[pattern.patternId]["value"] = parameter.value
@@ -20,5 +23,5 @@ if userConfig.files
 else
     errors = linter.lintDir '/src'
 
-errors = (transform err for err in errors)
+errors = (transform err for err in errors when err.rule in Object.keys(lintConfig))
 console.log JSON.stringify err for err in errors
