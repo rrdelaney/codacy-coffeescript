@@ -1,4 +1,4 @@
-##Patterns: indentation : { "value": "4" }
+##Patterns: indentation : { "value": 4 }
 
 fn1 = ->
 ##Err: indentation
