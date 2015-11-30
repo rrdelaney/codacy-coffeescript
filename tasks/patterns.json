@@ -28,7 +28,7 @@
                 {
                     "name": "value",
                     "description": "Indentation value",
-                    "default": 4
+                    "default": 2
                 }
             ]
         },
