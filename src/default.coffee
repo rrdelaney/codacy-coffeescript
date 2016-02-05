@@ -5,7 +5,7 @@ defaults =
         level: 'error'
     indentation:
         level: 'error'
-        value: 4
+        value: 2
     max_line_length:
         level: 'ignore'
     no_interpolation_in_single_quotes:
