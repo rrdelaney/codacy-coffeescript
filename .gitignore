@@ -12,3 +12,5 @@ docs/
 .idea
 .DS_Store
 *.iml
+
+.vscode
