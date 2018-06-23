@@ -5,36 +5,41 @@ module.exports = function(grunt) {
         var done = this.async();
         grunt.log.writeln('Generating docs...');
 
-        var patterns = grunt.file.readJSON('tasks/patterns.json');
+        var spec = grunt.file.readJSON('tasks/patterns.json');
         var codacyPatterns = {
-            name: patterns.name,
+            name: spec.name,
+            version: coffeelint.VERSION,
             patterns: []
         };
 
         var codacyPatternDescriptions = [];
 
-        for (var rule in patterns.patterns) {
-            var category = patterns.patterns[rule].category;
-            var message = coffeelint.RULES[rule].message;
-            var description = coffeelint.RULES[rule].description;
-            var level = patterns.patterns[rule].level;
-            var parameters = patterns.patterns[rule].parameters;
+        for (var rule in coffeelint.RULES) {
+            if (spec.patterns[rule]) {
+                var category = spec.patterns[rule].category;
+                var message = coffeelint.RULES[rule].message;
+                var description = coffeelint.RULES[rule].description;
+                var level = spec.patterns[rule].level;
+                var parameters = spec.patterns[rule].parameters;
 
-            grunt.file.write('docs/description/'+rule+'.md', description);
-            codacyPatterns.patterns.push({
-                patternId: rule,
-                category: category,
-                level: level,
-                parameters: parameters
-            });
+                grunt.file.write('docs/description/'+rule+'.md', description);
+                codacyPatterns.patterns.push({
+                    patternId: rule,
+                    category: category,
+                    level: level,
+                    parameters: parameters
+                });
 
-            codacyPatternDescriptions.push({
-                patternId: rule,
-                title: titleize(rule),
-                description: message,
-                parameters: parameters,
-                timeToFix: 5
-            });
+                codacyPatternDescriptions.push({
+                    patternId: rule,
+                    title: titleize(rule),
+                    description: message,
+                    parameters: parameters,
+                    timeToFix: 5
+                });
+            } else {
+                console.log("Missing rule: " + rule);
+            }
         }
 
         grunt.file.write('docs/description/description.json', JSON.stringify(codacyPatternDescriptions, null, 2));

@@ -1,0 +1,1 @@
+Checks that the file ends with a single newline

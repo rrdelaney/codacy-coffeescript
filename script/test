@@ -14,4 +14,5 @@ printf "${CYAN}Building docker image${NC}\n"
 docker rmi codacy-coffeescript
 docker build -t codacy-coffeescript . && printf "${GREEN}Build successful!${NC}\n"
 printf "${CYAN}Running plugin tests${NC}\n"
-cd codacy-plugins-test && (sbt "run-main codacy.plugins.DockerTest all codacy-coffeescript:latest" || cd ..)
+cd codacy-plugins-test && (sbt "run-main codacy.plugins.DockerTest json codacy-coffeescript:latest" || cd ..)
+cd codacy-plugins-test && (sbt "run-main codacy.plugins.DockerTest pattern codacy-coffeescript:latest" || cd ..)

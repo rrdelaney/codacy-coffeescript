@@ -36,7 +36,7 @@ sh script/bootstrap
 Test the project with
 
 ```bash
-sh script/bootstrap
+sh script/test
 ```
 
 ## What is Codacy

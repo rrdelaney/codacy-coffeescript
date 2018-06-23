@@ -1,0 +1,1 @@
+This rule enforces that operators have spaces around them.

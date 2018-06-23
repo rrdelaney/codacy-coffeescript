@@ -1,0 +1,1 @@
+This rule checks to make sure you have a space after commas.
