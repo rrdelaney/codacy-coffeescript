@@ -1,0 +1,1 @@
+Prevents defining duplicate keys in object literals and classes

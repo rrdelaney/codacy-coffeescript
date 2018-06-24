@@ -1,0 +1,322 @@
+[
+  {
+    "patternId": "coffeescript_error",
+    "title": "Coffeescript Error",
+    "description": "",
+    "timeToFix": 5
+  },
+  {
+    "patternId": "arrow_spacing",
+    "title": "Arrow Spacing",
+    "description": "Function arrows (-> and =>) must be spaced properly",
+    "parameters": [
+      {
+        "default": 0,
+        "description": "Number of spaces in empty objects",
+        "name": "empty_object_spaces"
+      },
+      {
+        "default": 0,
+        "description": "Number of spaces",
+        "name": "spaces"
+      }
+    ],
+    "timeToFix": 5
+  },
+  {
+    "patternId": "braces_spacing",
+    "title": "Braces Spacing",
+    "description": "Curly braces must have the proper spacing",
+    "timeToFix": 5
+  },
+  {
+    "patternId": "no_tabs",
+    "title": "No Tabs",
+    "description": "Line contains tab indentation",
+    "timeToFix": 5
+  },
+  {
+    "patternId": "no_trailing_whitespace",
+    "title": "No Trailing Whitespace",
+    "description": "Line ends with trailing whitespace",
+    "parameters": [
+      {
+        "default": false,
+        "description": "Allow in comments",
+        "name": "allowed_in_comments"
+      },
+      {
+        "default": true,
+        "description": "Allow in empty lines",
+        "name": "allowed_in_empty_lines"
+      }
+    ],
+    "timeToFix": 5
+  },
+  {
+    "patternId": "max_line_length",
+    "title": "Max Line Length",
+    "description": "Line exceeds maximum allowed length",
+    "parameters": [
+      {
+        "default": 80,
+        "description": "Line length",
+        "name": "value"
+      },
+      {
+        "default": true,
+        "description": "Enforce line limit for comments",
+        "name": "limitComments"
+      }
+    ],
+    "timeToFix": 5
+  },
+  {
+    "patternId": "line_endings",
+    "title": "Line Endings",
+    "description": "Line contains incorrect line endings",
+    "parameters": [
+      {
+        "default": "unix",
+        "description": "Line ending type",
+        "name": "value"
+      }
+    ],
+    "timeToFix": 5
+  },
+  {
+    "patternId": "no_trailing_semicolons",
+    "title": "No Trailing Semicolons",
+    "description": "Line contains a trailing semicolon",
+    "timeToFix": 5
+  },
+  {
+    "patternId": "indentation",
+    "title": "Indentation",
+    "description": "Line contains inconsistent indentation",
+    "parameters": [
+      {
+        "default": 2,
+        "description": "Indentation value",
+        "name": "value"
+      }
+    ],
+    "timeToFix": 5
+  },
+  {
+    "patternId": "camel_case_classes",
+    "title": "Camel Case Classes",
+    "description": "Class name should be UpperCamelCased",
+    "timeToFix": 5
+  },
+  {
+    "patternId": "colon_assignment_spacing",
+    "title": "Colon Assignment Spacing",
+    "description": "Colon assignment without proper spacing",
+    "timeToFix": 5
+  },
+  {
+    "patternId": "no_implicit_braces",
+    "title": "No Implicit Braces",
+    "description": "Implicit braces are forbidden",
+    "parameters": [
+      {
+        "default": true,
+        "description": "Strict",
+        "name": "strict"
+      }
+    ],
+    "timeToFix": 5
+  },
+  {
+    "patternId": "no_nested_string_interpolation",
+    "title": "No Nested String Interpolation",
+    "description": "Nested string interpolation is forbidden",
+    "timeToFix": 5
+  },
+  {
+    "patternId": "no_plusplus",
+    "title": "No Plusplus",
+    "description": "The increment and decrement operators are forbidden",
+    "timeToFix": 5
+  },
+  {
+    "patternId": "no_throwing_strings",
+    "title": "No Throwing Strings",
+    "description": "Throwing strings is forbidden",
+    "timeToFix": 5
+  },
+  {
+    "patternId": "no_backticks",
+    "title": "No Backticks",
+    "description": "Backticks are forbidden",
+    "timeToFix": 5
+  },
+  {
+    "patternId": "no_implicit_parens",
+    "title": "No Implicit Parens",
+    "description": "Implicit parens are forbidden",
+    "timeToFix": 5
+  },
+  {
+    "patternId": "no_empty_param_list",
+    "title": "No Empty Param List",
+    "description": "Empty parameter list is forbidden",
+    "timeToFix": 5
+  },
+  {
+    "patternId": "no_stand_alone_at",
+    "title": "No Stand Alone At",
+    "description": "@ must not be used stand alone",
+    "timeToFix": 5
+  },
+  {
+    "patternId": "space_operators",
+    "title": "Space Operators",
+    "description": "Operators must be spaced properly",
+    "timeToFix": 5
+  },
+  {
+    "patternId": "duplicate_key",
+    "title": "Duplicate Key",
+    "description": "Duplicate key defined in object or class",
+    "timeToFix": 5
+  },
+  {
+    "patternId": "empty_constructor_needs_parens",
+    "title": "Empty Constructor Needs Parens",
+    "description": "Invoking a constructor without parens and without arguments",
+    "timeToFix": 5
+  },
+  {
+    "patternId": "cyclomatic_complexity",
+    "title": "Cyclomatic Complexity",
+    "description": "The cyclomatic complexity is too damn high",
+    "parameters": [
+      {
+        "default": 10,
+        "description": "Threshold",
+        "name": "value"
+      }
+    ],
+    "timeToFix": 5
+  },
+  {
+    "patternId": "newlines_after_classes",
+    "title": "Newlines After Classes",
+    "description": "Wrong count of newlines between a class and other code",
+    "parameters": [
+      {
+        "default": 3,
+        "description": "Number of lines",
+        "name": "value"
+      }
+    ],
+    "timeToFix": 5
+  },
+  {
+    "patternId": "no_unnecessary_fat_arrows",
+    "title": "No Unnecessary Fat Arrows",
+    "description": "Unnecessary fat arrow",
+    "timeToFix": 5
+  },
+  {
+    "patternId": "missing_fat_arrows",
+    "title": "Missing Fat Arrows",
+    "description": "Used `this` in a function without a fat arrow",
+    "parameters": [
+      {
+        "default": false,
+        "description": "Strict",
+        "name": "is_strict"
+      }
+    ],
+    "timeToFix": 5
+  },
+  {
+    "patternId": "non_empty_constructor_needs_parens",
+    "title": "Non Empty Constructor Needs Parens",
+    "description": "Invoking a constructor without parens and with arguments",
+    "timeToFix": 5
+  },
+  {
+    "patternId": "no_unnecessary_double_quotes",
+    "title": "No Unnecessary Double Quotes",
+    "description": "Unnecessary double quotes are forbidden",
+    "timeToFix": 5
+  },
+  {
+    "patternId": "no_debugger",
+    "title": "No Debugger",
+    "description": "Found debugging code",
+    "parameters": [
+      {
+        "default": false,
+        "description": "Detect console statements",
+        "name": "console"
+      }
+    ],
+    "timeToFix": 5
+  },
+  {
+    "patternId": "no_interpolation_in_single_quotes",
+    "title": "No Interpolation In Single Quotes",
+    "description": "Interpolation in single quoted strings is forbidden",
+    "timeToFix": 5
+  },
+  {
+    "patternId": "no_empty_functions",
+    "title": "No Empty Functions",
+    "description": "Empty function",
+    "timeToFix": 5
+  },
+  {
+    "patternId": "prefer_english_operator",
+    "title": "Prefer English Operator",
+    "description": "Don't use &&, ||, ==, !=, or !",
+    "parameters": [
+      {
+        "default": "ignore",
+        "description": "Disallow double ! operator",
+        "name": "doubleNotLevel"
+      }
+    ],
+    "timeToFix": 5
+  },
+  {
+    "patternId": "spacing_after_comma",
+    "title": "Spacing After Comma",
+    "description": "a space is required after commas",
+    "timeToFix": 5
+  },
+  {
+    "patternId": "transform_messes_up_line_numbers",
+    "title": "Transform Messes Up Line Numbers",
+    "description": "Transforming source messes up line numbers",
+    "timeToFix": 5
+  },
+  {
+    "patternId": "ensure_comprehensions",
+    "title": "Ensure Comprehensions",
+    "description": "Comprehensions must have parentheses around them",
+    "timeToFix": 5
+  },
+  {
+    "patternId": "no_this",
+    "title": "No This",
+    "description": "Don't use 'this', use '@' instead",
+    "timeToFix": 5
+  },
+  {
+    "patternId": "eol_last",
+    "title": "Eol Last",
+    "description": "File does not end with a single newline",
+    "timeToFix": 5
+  },
+  {
+    "patternId": "no_private_function_fat_arrows",
+    "title": "No Private Function Fat Arrows",
+    "description": "Used the fat arrow for a private function",
+    "timeToFix": 5
+  }
+]

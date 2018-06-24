@@ -1,7 +1,6 @@
 target/
 codacy-plugins-test/
 node_modules/
-docs/
 *.log
 /RUNNING_PID
 /logs/
