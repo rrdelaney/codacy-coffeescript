@@ -14,12 +14,12 @@
       "parameters": [
         {
           "default": 0,
-          "description": "Indentation value",
+          "description": "Number of spaces in empty objects",
           "name": "empty_object_spaces"
         },
         {
           "default": 0,
-          "description": "Indentation value",
+          "description": "Number of spaces",
           "name": "spaces"
         }
       ]
@@ -41,12 +41,12 @@
       "parameters": [
         {
           "default": false,
-          "description": "Line ending type",
+          "description": "Allow in comments",
           "name": "allowed_in_comments"
         },
         {
           "default": true,
-          "description": "Line ending type",
+          "description": "Allow in empty lines",
           "name": "allowed_in_empty_lines"
         }
       ]
@@ -58,12 +58,12 @@
       "parameters": [
         {
           "default": 80,
-          "description": "Line ending type",
+          "description": "Line length",
           "name": "value"
         },
         {
           "default": true,
-          "description": "Line ending type",
+          "description": "Enforce line limit for comments",
           "name": "limitComments"
         }
       ]
@@ -114,7 +114,7 @@
       "parameters": [
         {
           "default": true,
-          "description": "Line ending type",
+          "description": "Strict",
           "name": "strict"
         }
       ]
@@ -188,7 +188,7 @@
       "parameters": [
         {
           "default": 3,
-          "description": "Line ending type",
+          "description": "Number of lines",
           "name": "value"
         }
       ]
@@ -205,7 +205,7 @@
       "parameters": [
         {
           "default": false,
-          "description": "Line ending type",
+          "description": "Strict",
           "name": "is_strict"
         }
       ]
@@ -227,7 +227,7 @@
       "parameters": [
         {
           "default": false,
-          "description": "Line ending type",
+          "description": "Detect console statements",
           "name": "console"
         }
       ]
@@ -249,7 +249,7 @@
       "parameters": [
         {
           "default": "ignore",
-          "description": "Line ending type",
+          "description": "Disallow double ! operator",
           "name": "doubleNotLevel"
         }
       ]
