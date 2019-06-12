@@ -5,7 +5,7 @@ defaultLintConfig = require './default'
 lintConfig = {}
 
 try
-    userConfig = require '/src/.codacy'
+    userConfig = require '/.codacyrc'
 catch
     userConfig = {}
 
